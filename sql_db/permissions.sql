@@ -1,0 +1,3 @@
+CREATE USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'test@123';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;

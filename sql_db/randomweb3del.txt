@@ -1,0 +1,15 @@
+-- Delete records from the orders table between 2025-02-01 and 2025-02-10
+DELETE FROM orders
+WHERE nodatetime BETWEEN '2025-02-01 00:00:00' AND '2025-02-10 23:59:59';
+
+-- Delete records from the temp_alerts table between 2025-02-01 and 2025-02-10
+DELETE FROM temp_alerts
+WHERE datatime BETWEEN '2025-02-01 00:00:00' AND '2025-02-10 23:59:59';
+
+-- Delete records from the security_alerts table between 2025-02-01 and 2025-02-10
+DELETE FROM security_alerts
+WHERE datatime BETWEEN '2025-02-01 00:00:00' AND '2025-02-10 23:59:59';
+
+-- Delete records from the consumption table between 2025-02-01 and 2025-02-10
+DELETE FROM consumption
+WHERE record_date BETWEEN '2025-02-01 00:00:00' AND '2025-02-10 23:59:59';
